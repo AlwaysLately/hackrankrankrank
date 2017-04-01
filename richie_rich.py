@@ -30,9 +30,7 @@ else:
 			else:
 				number[i] = number[n-1-i] = number[i] if number[i] > number[n-1-i] else number[n-1-i]
 	
-	result = ''
-	for i in number:
-		result += str(i)
-	print result
+	result = [str(i) for i in number]
+	print ''.join(result)
 
 
