@@ -21,6 +21,8 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 ## linux ##
 一些简单的常用命令还是应该知道的，一些太复杂的命令就直接用脚本吧
 
+## github ##
+全球程序员最大的交友网站
 
 
 > Written with [StackEdit](https://stackedit.io/).
