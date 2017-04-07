@@ -20,6 +20,10 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 
 ## linux ##
 一些简单的常用命令还是应该知道的，一些太复杂的命令就直接用脚本吧
+使用任何工具的第一件事就是搜索，学会查找你就再也不会在纷繁迷乱的Linux中迷路了
+linux中关于查找的有这样几个命令，find，grep，whereis，locate等，但是你只要会find基本上就可以对付80％以上的查找场景了，这里把grep放在这里可能并不合适，毕竟人家是文本查找，但是我经常搞混和忘记，所以就酱紫吧。
+find使用实例：![启动不了ipython，找ipython安装包](https://github.com/AlwaysLately/hackrankrankrank/blob/master/find_1.png)
+
 
 ## github ##
 全球程序员最大的交友网站
@@ -32,3 +36,4 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 		
  2. 语言本身
 	
+> Written with [StackEdit](https://stackedit.io/).
