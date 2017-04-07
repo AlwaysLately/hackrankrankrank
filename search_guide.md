@@ -24,5 +24,11 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 ## github ##
 全球程序员最大的交友网站
 
+## python ##
+去用你的ruby和java吧，我没什么意见
 
-> Written with [StackEdit](https://stackedit.io/).
+ 1. 工程相关
+		 [All about import](http://www.codingpy.com/article/python-import-101/?)
+		
+ 2. 语言本身
+	
