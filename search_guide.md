@@ -16,7 +16,9 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 		选中光标所在的当前行：cmd + l
 		分屏：cmd + option + 2
 		取消分屏：cmd + option + 1
+		整体代码缩进：cmd + [, cmd + ]
 		last but not least：cmd ＋ p means you can go anywhere and find everything
+
 			 
 	2. subl file name or project name
 		见鬼不要再用在命令行下subl打开一个文件夹了，直接点击project，拖拽进去即可，我受够了各种alias，export，ln。
@@ -48,6 +50,7 @@ find使用实例：![启动不了ipython，找ipython安装包](https://github.c
 
  1. 工程相关
 		 [All about import](http://www.codingpy.com/article/python-import-101/?)
+		 [What is data serialization ](http://stackoverflow.com/questions/11817950/what-is-data-serialization)
 		
  2. 语言本身
 	
