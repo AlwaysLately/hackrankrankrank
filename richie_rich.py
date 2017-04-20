@@ -1,7 +1,7 @@
 #!/bin/python
 
 import sys
-
+import pdb
 
 n, k = raw_input().strip().split(' ')
 n, k = [int(n), int(k)]
@@ -9,82 +9,112 @@ number = raw_input().strip()
 
 
 number = map(lambda x: int(x), list(number))
+change = 0
 flag = 0
+has_changed_checker = []
+
+pdb.set_trace()
 
 for i in xrange(n / 2):
-    if k < 0:
-        print -1
-        flag = 1
-    else:
-        if number[i] == number[n - i - 1] and number[i] != 9:
-            k -= 2
-            if k < 0:
-                k += 2
-            else:
-                number[i] = 9
-                number[n - i - 1] = 9
-        elif number[i] == number[n - i - 1] and number[i] == 9:
-            pass
-        elif number[i] != number[n - i - 1] and (number[i] == 9 or number[n - i - 1] == 9):
-            k -= 1
-            if k < 0:
-                k += 1
-            else:
-                number[i] = 9
-                number[n - i - 1] = 9
+    if number[i] != number[n - i - 1]:
+        if number[i] > number[n - i - 1]:
+            number[n - i - 1] = number[i]
+            has_changed_checker.append(number[n-i-1])
         else:
-            k -= 2
-            if k < 0:
-                k += 2
-                k -= 1
-                if k < 0:
-                    print -1
-                    flag = 1
-                else:
-                    if number[i] > number[n - i - 1]:
-                        number[n - i - 1] = number[i]
-                    else:
-                        number[i] = number[n - i - 1]
-            else:
-                number[i] = 9
-                number[n - i - 1] = 9
+            number[i] = number[n - i - 1]
+            has_changed_checker.append(number[i])
+        has_changed_checker,append(number[i])
+        change += 1
+if change > k:
+    print -1
+    flag = 1
 
+i = 0
+left = k - change
+for i in xrange(n / 2):
+    if number[i] != 9:
+        if number[i] != has_changed_checker[i]:
+            left -= 2
+        else:
+                        
+    
+        left -= 1
+    if left >= 0:
+        number[n - i - 1] = 9
+        number[i] = 9
+    else:
+        break
 
 if n % 2 == 0:
     pass
 else:
-    if k > 0 and number[n / 2] != 9:
+    if left > 0 and number[n / 2] != 9:
         number[n / 2] = 9
-
 if flag == 0:
-    result = [str(i) for i in number]
-    print ''.join(result)
+    result = [str(j) for j in number]
+    print int(''.join(result))
+# number = map(lambda x: int(x), list(number))
+# flag = 0
+# change = 0
 
-"""
-number = map(lambda x: int(x), list(number))
-digit_not_equal = 0
-digit_is_nine = 0
-digit_change_into_nine = 0
-for i in xrange(n / 2):
-    if number[i] != number[n - 1 - i]:
-        digit_not_equal += 1
-        if number[i] == 9 or number[n - 1 - i] == 9:
-            digit_is_nine += 1
+# for i in xrange(n / 2):
+#     if number[i] != number[n - i - 1]:
+#         change += 1
+# if change > k:
+#     print -1
+#     flag = 1
+#     break
+# else:
+#     i = 0
+#     for i in xrange(n / 2):
+#         if k < 0:
+#             print -1
+#             flag = 1
+#             break
+#         else:
+#             if number[i] == number[n - i - 1] and number[i] != 9:
+#                 k -= 2
+#                 if k < 0:
+#                     k += 2
+#                 else:
+#                     number[i] = 9
+#                     number[n - i - 1] = 9
+#             elif number[i] == number[n - i - 1] and number[i] == 9:
+#                 pass
+#             elif number[i] != number[n - i - 1] and 9 in (number[i], number[n - i - 1]):
+#                 k -= 1
+#                 if k < 0:
+#                     print -1
+#                     flag = 1
+#                     break
+#                 else:
+#                     number[i] = 9
+#                     number[n - i - 1] = 9
+#             else:
+#                 k -= 2
+#                 if k < 0:
+#                     k += 2
+#                     k -= 1
+#                     if k < 0:
+#                         print -1
+#                         flag = 1
+#                         break
+#                     else:
+#                         if number[i] > number[n - i - 1]:
+#                             number[n - i - 1] = number[i]
+#                         else:
+#                             number[i] = number[n - i - 1]
+#                 else:
+#                     number[i] = 9
+#                     number[n - i - 1] = 9
 
-if digit_not_equal > k:
-    print -1
-else:
-    digit_both_changed = k - digit_not_equal
-    sum_digit = 0
-    for i in xrange(n / 2):
-        if number[i] != number[n - 1 - i]:
-            if sum_digit < digit_both_changed:
-                number[i] = number[n - 1 - i] = 9
-                sum_digit += 1
-            else:
-                number[i] = number[
-                    n - 1 - i] = number[i] if number[i] > number[n - 1 - i] else number[n - 1 - i]
 
-    result = [str(i) for i in number]
-    print ''.join(result)
-"""
+# if n % 2 == 0:
+#     pass
+# else:
+#     if k > 0 and number[n / 2] != 9:
+#         number[n / 2] = 9
+
+# if flag == 0:
+#     result = [str(j) for j in number]
+#     print int(''.join(result))

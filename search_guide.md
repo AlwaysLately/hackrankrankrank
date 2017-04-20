@@ -17,6 +17,8 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 		分屏：cmd + option + 2
 		取消分屏：cmd + option + 1
 		整体代码缩进：cmd + [, cmd + ]
+		在多个tab间跳转： cmd + shift + [, cmd + shift + ]
+		添加整块注释：cmd + /
 		last but not least：cmd ＋ p means you can go anywhere and find everything
 
 			 
