@@ -17,8 +17,6 @@ sublime是世界上最好的编辑器，不服也不跟你辩
 		分屏：cmd + option + 2
 		取消分屏：cmd + option + 1
 		整体代码缩进：cmd + [, cmd + ]
-		在多个tab间跳转： cmd + shift + [, cmd + shift + ]
-		添加整块注释：cmd + /
 		last but not least：cmd ＋ p means you can go anywhere and find everything
 
 			 
@@ -53,7 +51,7 @@ find使用实例：![启动不了ipython，找ipython安装包](https://github.c
  1. 工程相关
 		 [All about import](http://www.codingpy.com/article/python-import-101/?)
 		 [What is data serialization ](http://stackoverflow.com/questions/11817950/what-is-data-serialization)
-		
+		[unit test](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/)		
  2. 语言本身
 	
 > Written with [StackEdit](https://stackedit.io/).
