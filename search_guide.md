@@ -53,5 +53,10 @@ find使用实例：![启动不了ipython，找ipython安装包](https://github.c
 		 [What is data serialization ](http://stackoverflow.com/questions/11817950/what-is-data-serialization)
 		[unit test](https://jeffknupp.com/blog/2013/12/09/improve-your-python-understanding-unit-testing/)		
  2. 语言本身
+		[decorator](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386819879946007bbf6ad052463ab18034f0254bf355000)
+
+
+
+## MySQL ##
 	
 > Written with [StackEdit](https://stackedit.io/).
