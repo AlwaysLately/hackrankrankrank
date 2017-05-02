@@ -64,7 +64,8 @@ find使用实例：![启动不了ipython，找ipython安装包](https://github.c
 		 
 		
  2. 语言本身
-		[decorator](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386819879946007bbf6ad052463ab18034f0254bf355000)
+		[decorator](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386819879946007bbf6ad052463ab18034f0254bf355000)  
+		[str format](http://blog.csdn.net/handsomekang/article/details/9183303)
 
 
 
