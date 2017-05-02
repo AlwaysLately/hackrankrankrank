@@ -1,7 +1,5 @@
-#!/bin/python
 
 import sys
-import pdb
 
 n, k = raw_input().strip().split(' ')
 n, k = [int(n), int(k)]
@@ -13,44 +11,36 @@ change = 0
 flag = 0
 has_changed_checker = []
 
-pdb.set_trace()
-
+i = 0
 for i in xrange(n / 2):
     if number[i] != number[n - i - 1]:
+        has_changed_checker.append(i)
         if number[i] > number[n - i - 1]:
             number[n - i - 1] = number[i]
-            has_changed_checker.append(number[n-i-1])
         else:
             number[i] = number[n - i - 1]
-            has_changed_checker.append(number[i])
-        has_changed_checker,append(number[i])
         change += 1
+
 if change > k:
     print -1
     flag = 1
-
-i = 0
-left = k - change
-for i in xrange(n / 2):
-    if number[i] != 9:
-        if number[i] != has_changed_checker[i]:
-            left -= 2
-        else:
-                        
     
-        left -= 1
-    if left >= 0:
-        number[n - i - 1] = 9
-        number[i] = 9
-    else:
-        break
-
-if n % 2 == 0:
-    pass
-else:
-    if left > 0 and number[n / 2] != 9:
-        number[n / 2] = 9
 if flag == 0:
+    i = 0
+    for i in xrange(n / 2):
+        if i in has_changed_checker:
+            if number[i] != 9 and change  < k:
+                change += 1
+                number[i] = 9
+                number[n - i - 1] = 9
+        else:
+            if number[i] != 9 and change + 1 < k:
+                change += 2
+                number[i] = 9
+                number[n - i - 1] = 9
+
+    if n % 2 != 0 and k - change > 0:
+        number[n / 2] = 9
     result = [str(j) for j in number]
     print int(''.join(result))
 # number = map(lambda x: int(x), list(number))
