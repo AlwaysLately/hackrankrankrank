@@ -24,7 +24,7 @@ for i in xrange(n / 2):
 if change > k:
     print -1
     flag = 1
-    
+
 if flag == 0:
     i = 0
     for i in xrange(n / 2):
@@ -33,11 +33,10 @@ if flag == 0:
                 change += 1
                 number[i] = 9
                 number[n - i - 1] = 9
-        else:
-            if number[i] != 9 and change + 1 < k:
-                change += 2
-                number[i] = 9
-                number[n - i - 1] = 9
+        elif number[i] != 9 and change + 1 < k:
+            change += 2
+            number[i] = 9
+            number[n - i - 1] = 9
 
     if n % 2 != 0 and k - change > 0:
         number[n / 2] = 9
