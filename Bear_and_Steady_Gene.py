@@ -6,13 +6,15 @@ n = int(raw_input())
 s = raw_input()
 reved_s = s[::-1]
 each_count = {'A': 0, 'C': 0, 'T': 0, 'G': 0}
+over_index
 fst_index = 0
 lst_index = 0
-
+f_over_itm = ''
 for i in xrange(n):
     each_count[s[i]] += 1
     if each_count[s[i]] > n / 4:
         fst_index = i
+        over_itm = s[i]
         break
 i = 0
 each_count = {'A': 0, 'C': 0, 'T': 0, 'G': 0}
